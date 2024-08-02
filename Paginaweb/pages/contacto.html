@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="C:\Users\MANO AMIGA\Documents\Loren2\estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" href="../imagenes/apple.logo.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+<header>
+  <nav>
+    <section>
+      <a href="../index.html">Home</a>
+      <a href="../pages/caracteristicas.html">Caracteristicas</a>
+      <a href="../pages/contacto.html">Contacto</a>
+      <img src="../imagenes/appl2.jpg" width="60">
+      <a href="../pages/iniciarsesion.html">Iniciar sesion</a>
+    <h2>PROYECTO</h2>
+  </header>
+</nav>
+</section>
+<h1>Iphone </h1>
+<hr>
+<br>
+<h2>Formulario</h2>
+<ul>
+
+    <div class="caracteristicas">
+    <p>
+        <label for="modelos">
+          <span>Modelos:</span>
+        </label>
+        <select id="celulares" name="modelos">
+          <option value="Iphone11">Iphone11</option>
+          <option value="Iphone12">Iphone12</option>
+          <option value="Iphone13">Iphone13</option>
+          <option value="Iphone12">Iphone14</option>
+          <option value="Iphone13">Iphone15</option>
+        </select>
+        <br>
+        <span>Versión:</span>
+        <select id="celulares" name="modelos">
+            <option value="pro"></option>
+            <option value="pro">Pro</option>
+            <option value="pro max">Pro max</option>
+          </select>
+      </p>
+</ul> 
+</div>
+<p>
+    <input type="radio" name="size" id="size_1" value="small" />
+    <label for="size_1" style="color: blue;">Azul</label>
+    <input type="radio" name="size" id="size_1" value="small" />
+    <label for="size_1" >Blanco</label>
+    <input type="radio" name="size" id="size_1" value="small" />
+    <label for="size_1" style="color: red;">Rojo</label>
+    <input type="radio" name="size" id="size_1" value="small" />
+    <label for="size_1" style="color: black;">Negro</label>
+  </p>
+
+
+  <section id="iniciarsesion">
+    <li>
+        <label for="nombre">Nombre:</label>
+        <input type="text" required minlength="4" maxlength="15" >
+    
+    </li>
+        <br>
+    <li>
+        <label for="nombre">Correo:</label>
+        <input type="text" onblur="if(this.value.indexOf('@') === -1) this.value += '@gmail.com';">
+    </li>
+      <br>
+    <li>
+      Contraseña: <input type="password" id="pwd" name="pwd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,}" 
+      title="contraseña debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número ">
+    </li>
+    </section>
+  <section>
+    <p>
+      <button type="submit">Enviar formulario</button>
+    </p>
+  </section>
+</form>
+</body>
+</html>
